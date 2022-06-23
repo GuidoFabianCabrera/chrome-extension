@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Vertical Monitor",
+  "description": "Margin top video in Youtube",
+  "version": "1.0",
+  "icons": {
+    "16": "/logo.png",
+    "48": "/logo.png",
+    "128": "/logo.png"
+  },
+  "page_actions": {
+    "default_icon": {
+      "16": "/logo.png",
+      "48": "/logo.png",
+      "128": "/logo.png"
+    }
+  },
+  "content_scripts": [
+    { "matches": ["https://www.youtube.com/watch*"], "css": ["main.css"] }
+  ]
+}
